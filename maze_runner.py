@@ -124,7 +124,7 @@ class Maze():
 
         # Initialize frontier to just the starting position
         start = Node(state=self.start, parent=None, action=None)
-        frontier = StackFrontier()
+        frontier = StackFrontier() # change to QueueFrontier() to switch to a first in, first out / breadth- first search 
         frontier.add(start)
 
         # Initialize an empty explored set
